@@ -1,7 +1,30 @@
-.banner {
+.home-banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 150px 50px;
+  height: 100vh;
+  color: #eee;
+  text-align: left;
+  padding-top: 40vh;
+}
+
+h1, p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.btn.btn-primary {
+  background-color: white;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  opacity: .7;
+  border-style: solid 60px 1px 1px 1px black;
+
+    &:hover {
+    opacity: .9;
+
+  }
+
 }
 
 .banner h1 {

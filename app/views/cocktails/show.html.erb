@@ -1,5 +1,16 @@
 <h1>Show Cocktail</h1>
-<h2> <%= @cocktail.name %> </h2>
+
+<div class="card-product">
+  <img src="<%= cl_image_path @cocktail.photo.key %>" />
+  <div class="card-product-infos">
+    <h2><%= @cocktail.name %></h2>
+      <% @cocktail.ingredients.each do |ingredient| %>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">   <%= ingredient.name %> </li>
+        </ul>
+        <% end %>
+  </div>
+</div>
 
 
 <% @cocktail.doses.each do |dose|%>

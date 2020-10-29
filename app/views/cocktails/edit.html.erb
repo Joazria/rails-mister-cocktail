@@ -5,14 +5,8 @@
      <ul><li class="list-inline-item"> <%= dose.description  %> </li>
      <li class="list-inline-item"> <%= dose.ingredient.name %> </li></ul>
 
-    <%= simple_form_for [edit_cocktail_dose_path(@cocktail, dose)] do |f| %>
-      <%= f.association :ingredient %>
-      <%= f.input :description  %>
-      <%= f.submit class: "btn btn-primary"%>
     <% end %>
 
-    <% end %>
-
-  <%= link_to 'Edit', edit_article_path(@article) %>
+  <%= link_to 'Edit', edit_cocktail_path(@cocktail) %>
   <%= link_to 'Cocktails lists', root_path %>
 

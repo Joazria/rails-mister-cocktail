@@ -1,15 +1,8 @@
-
-<div class="container">
-
-      <h1>Bistrots les Amis</h1>
-
-      <br>
-
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/numama/image/upload/ar_2.5,c_crop/v1603385466/home_banner_du3qqz.png);">
+<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/numama/image/upload/ar_2.5,c_crop/v1603385466/home_banner_du3qqz.png);">
   <div class="container">
     <h1> <strong>Bistrôt les Amis</strong> </h1>
     <p>Change your life and learn to drink more ;-)</p>
-    <a class="btn btn-primary" href="/cocktails/new">New Cocktail</a>
+    <a class="btn btn-primary" href="/cocktails/new">Create a Cocktail</a>
   </div>
 </div>
 <br>
@@ -30,12 +23,8 @@
                 <% end %>
                 <div class="card-body">
                    <%= link_to 'more infos', cocktail_path(cocktail), class: "btn btn-success" %>
-                      <%= link_to 'edit', edit_cocktail_path(cocktail), class: "btn btn-primary" %>
-                      <%= link_to 'Delete', cocktail_path(cocktail),
-                            data: {:confirm => 'Are you sure?'}, :method => :delete , class: "btn btn-danger"%>
-                </div>
               </div>
             <% end %>
           <% end %>
-        </div>
-    </div>
+  </div>
+

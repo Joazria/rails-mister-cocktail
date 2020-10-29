@@ -25,7 +25,7 @@ class CocktailsController < ApplicationController
 
   end
 
-  # POST /articles
+  # POST /cocktail
   def create
     @cocktails = Cocktail.all
     @cocktail = Cocktail.new(cocktail_params)
